@@ -1,0 +1,32 @@
+{
+  "name": "rollup-plugin-post-replace",
+  "version": "1.0.0",
+  "description": "replace content after bundling",
+  "author": "Mark Milstein <mark@epiloque.com>",
+  "repository": "https://github.com/epiloque/rollup-plugin-post-replace",
+  "keywords": [
+    "rollup",
+    "plugin",
+    "replace",
+    "rollup-plugin"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/epilque/rollup-plugin-post-replace",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "node ./test/index.js"
+  },
+  "main": "./lib/index.js",
+  "dependencies": {
+    "magic-string": "^0.16.0"
+  },
+  "devDependencies": {
+    "rollup": "^0.36.3",
+    "tape": "^4.6.2"
+  }
+}

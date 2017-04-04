@@ -11,7 +11,7 @@ function escape (str) {
 module.exports = function replace (options = {}) {
   const values = options.values || options
   const delimiters = (options.delimiters || ['', '']).map(escape)
-  const matchers = Object.keys(values)
+  let matchers = Object.keys(values)
   if (options.escapeValues) {
     matchers = matchers.map(escape)
   }
